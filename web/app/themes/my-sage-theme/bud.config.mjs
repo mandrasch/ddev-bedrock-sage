@@ -30,12 +30,16 @@ export default async (app) => {
      * Proxy origin (`WP_HOME`)
      */
     // .proxy("http://example.test")
-    .proxy('https://ddev-bedrock-sage.ddev.site')
+    //.proxy('https://ddev-bedrock-sage.ddev.site')
+    //.proxy('https://ddev-bedrock-sage.ddev.site:3000')
+    .proxy('http://ddev-bedrock-sage.ddev.site')
+    //.proxy(false)
     /**
      * Development origin
      */
     // .serve("http://0.0.0.0:3000")
-    .serve('https://ddev-bedrock-sage.ddev.site:3000')
+     .serve('http://ddev-bedrock-sage.ddev.site:3000')
+    //.serve(3000)
 
     /**
      * URI of the `public` directory
