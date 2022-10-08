@@ -108,13 +108,11 @@ Also we need to modify `bud.config.mjs`:
     /**
      * Proxy origin (`WP_HOME`)
      */
-    // .proxy("http://example.test")
-    .proxy('https://ddev-bedrock-sage.ddev.site')
+    .proxy('http://ddev-bedrock-sage.ddev.site')
     /**
      * Development origin
      */
-    // .serve("http://0.0.0.0:3000")
-    .serve('https://ddev-bedrock-sage.ddev.site:3000')
+    .serve('http://ddev-bedrock-sage.ddev.site:3000')
 ```
 
 See: https://discourse.roots.io/t/sage-10-ddev-browsersync-exposing-port-3000-400-bad-request/22215/2
